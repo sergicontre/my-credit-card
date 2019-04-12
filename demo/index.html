@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      background: #fafafa;
+    }
+  </style>
+</head>
+<body>
+  <div id="demo"></div>
+
+  <script type="module">
+    import { html, render } from 'https://unpkg.com/lit-html?module'; // workaround until owc-dev-server supports html
+    import '../src/my-credit-card.js';
+
+    const title = 'MY LITELEMENT BANK';
+    render(html`
+      <my-credit-card .title=${title}>
+      </my-credit-card>
+    `, document.querySelector('#demo'));
+  </script>
+</body>
+</html>
