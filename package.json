@@ -1,21 +1,27 @@
 {
   "name": "my-credit-card",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Webcomponent my-credit-card for testing interoperability",
   "author": "my-credit-card",
   "homepage": "https://github.com/open-wc/open-wc/",
   "license": "MIT",
   "repository": "https://github.com/open-wc/open-wc/",
   "scripts": {
-    "start": "owc-dev-server --open demo"
+    "start": "owc-dev-server --open demo",
+    "build": "rollup -c"
   },
   "dependencies": {
     "lit-html": "^1.0.0",
     "lit-element": "^2.0.1"
   },
   "devDependencies": {
-    "owc-dev-server": "^0.3.0"
+    "@open-wc/building-rollup": "^0.3.0",
+    "http-server": "^0.11.1",
+    "owc-dev-server": "^0.3.0",
+    "rimraf": "^2.6.3",
+    "rollup": "^1.10.0",
+    "rollup-plugin-node-resolve": "^4.0.0"
   },
   "main": "src/my-credit-card.js",
-  "module": "src/my-credit-card.js"
+  "module": "build/my-credit-card.js"
 }
