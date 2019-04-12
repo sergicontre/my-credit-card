@@ -15,5 +15,7 @@
   },
   "devDependencies": {
     "owc-dev-server": "^0.3.0"
-  }
+  },
+  "main": "src/my-credit-card.js",
+  "module": "src/my-credit-card.js"
 }
