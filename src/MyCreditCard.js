@@ -31,7 +31,7 @@ export default class MyCreditCard extends LitElement {
           <div id="cardholder-container">
             <label for="card-holder">Card Holder
             </label>
-            <input type="text" id="card-holder" placeholder="e.g. John Doe" />
+            <input type="text" id="card-holder" placeholder="e.g. Sergio Contreras" />
           </div>
 
           <div id="exp-container">
