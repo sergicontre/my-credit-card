@@ -1,11 +1,11 @@
 {
   "name": "my-credit-card",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Webcomponent my-credit-card for testing interoperability",
   "author": "my-credit-card",
-  "homepage": "https://github.com/open-wc/open-wc/",
+  "homepage": "https://github.com/sergicontre/my-credit-card",
   "license": "MIT",
-  "repository": "https://github.com/open-wc/open-wc/",
+  "repository": "https://github.com/sergicontre/my-credit-card",
   "scripts": {
     "start": "owc-dev-server --open demo",
     "build": "rollup -c"
