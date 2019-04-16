@@ -5,6 +5,28 @@ export const myCreditCardStyle = css`
     display: block;
     font-family: sans-serif;
 }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+// On Focus:
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+
 #amount {
   font-size: 12px;
 }
@@ -162,10 +184,16 @@ input::-webkit-input-placeholder {
   font-size: 10px;
 }
 
-label {
+label, legend span {
   display: block;
   margin: 7px auto 7px;
   text-transform:uppercase
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 #shadow {
@@ -188,5 +216,8 @@ label {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%) translate(120px,20px);
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 `;
