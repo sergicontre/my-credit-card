@@ -53,6 +53,7 @@ export default class MyCreditCard extends LitElement {
            <svg
               enable-background="new 0 0 87 56" id="Layer_1" version="1.1" viewBox="0 0 87 56" 
               xml:space="preserve">
+              <title>Send</title>
               <g>
                   <polygon fill="#F1F2F2" points="1,2.729 1,53.152 86,53.152 86,2.729  " />
                   <rect fill="#F1F2F2" height="27.979" width="85" x="1" y="14.01" />
