@@ -29,25 +29,27 @@ export default class MyCreditCard extends LitElement {
           </label>
           <input type="text" id="card-number" placeholder="1234 5678 9101 1112" length="16">
           <div id="cardholder-container">
-            <label for="card-holder">Card Holder
-            </label>
+            <label for="card-holder">Card Holder</label>
             <input type="text" id="card-holder" placeholder="e.g. Sergio Contreras" />
           </div>
 
           <div id="exp-container">
-            <label for="card-exp">
-              Expiration
-            </label>
-            <input id="card-month" type="text" placeholder="MM" length="2">
-            <input id="card-year" type="text" placeholder="YY" length="2">
+            <fieldset>
+              <legend><span>Expiration</span></legend>
+              <label for="card-month" class="sr-only">MM</label>
+              <input id="card-month" type="text" placeholder="MM" length="2">
+              <label for="card-year" class="sr-only">YY</label>
+              <input id="card-year" type="text" placeholder="YY" length="2">
+            </fieldset>
           </div>
+
           <div id="cvc-container">
             <label for="card-cvc"> CVC/CVV</label>
             <input id="card-cvc" placeholder="XXX-X" type="text" min-length="3" max-length="4">
             <p>Last 3 or 4 digits</p>
           </div>
 
-          <div id="chip" class="chip" @click="${this.handleClick}">
+          <button type="button" id="chip" class="chip" @click="${this.handleClick}">
            <svg
               enable-background="new 0 0 87 56" id="Layer_1" version="1.1" viewBox="0 0 87 56" 
               xml:space="preserve">
@@ -78,7 +80,7 @@ export default class MyCreditCard extends LitElement {
                   </g>
               </g>
             </svg>
-          </div>
+          </button>
 
         </div>
 
